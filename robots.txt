@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://chen-z-b.github.io/sitemap.xml
+Sitemap: https://chenzhibin.org/sitemap.xml
