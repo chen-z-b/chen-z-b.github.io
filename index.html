@@ -9,69 +9,99 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
       background: #ffffff;
-      color: #1a1a1a;
+      color: #171717;
       font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
       font-size: 18px;
       line-height: 1.65;
     }
 
     main {
-      max-width: 720px;
-      margin: 88px auto;
-      padding: 0 28px;
+      max-width: 660px;
+      margin: 92px auto;
+      padding: 0 32px;
     }
 
     h1 {
-      margin: 0 0 28px 0;
-      font-size: 38px;
+      margin: 0 0 24px 0;
+      font-size: 42px;
       font-weight: normal;
+      line-height: 1.15;
       letter-spacing: 0.01em;
-      line-height: 1.2;
     }
 
     .affiliation {
-      margin-bottom: 34px;
+      margin: 0 0 46px 0;
+      color: #2b2b2b;
     }
 
-    .affiliation p {
+    .institution {
       margin: 0;
     }
 
-    .divider {
-      width: 52px;
-      border: none;
-      border-top: 1px solid #1a1a1a;
-      margin: 36px 0 30px 0;
+    .feature {
+      margin: 0 0 42px 0;
+      padding: 22px 0 20px 0;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #d6d6d6;
+    }
+
+    .feature-label {
+      margin: 0 0 8px 0;
+      font-size: 14px;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+      color: #666;
+    }
+
+    .feature-link {
+      font-size: 22px;
+      color: #171717;
+      text-decoration: none;
+      border-bottom: 1px solid #777;
+    }
+
+    .feature-link:hover {
+      border-bottom-color: #171717;
+    }
+
+    .pdf-note {
+      margin-left: 10px;
+      font-size: 15px;
+      color: #777;
     }
 
     .contact {
-      margin-top: 0;
+      margin: 0;
+      color: #2b2b2b;
     }
 
     a {
-      color: #1a1a1a;
+      color: #171717;
       text-decoration: none;
       border-bottom: 1px solid #999;
     }
 
     a:hover {
-      border-bottom-color: #1a1a1a;
+      border-bottom-color: #171717;
     }
 
     @media (max-width: 600px) {
       main {
-        margin: 56px auto;
+        margin: 58px auto;
         padding: 0 24px;
       }
 
       h1 {
-        font-size: 32px;
+        font-size: 35px;
       }
 
       body {
         font-size: 17px;
+      }
+
+      .feature-link {
+        font-size: 20px;
       }
     }
   </style>
@@ -82,18 +112,18 @@
     <h1>Chen Zhibin</h1>
 
     <section class="affiliation">
-      <p>MA Student</p>
-      <p>Munich Center for Mathematical Philosophy (MCMP)</p>
-      <p>LMU Munich</p>
+      <p class="institution">Munich Center for Mathematical Philosophy (MCMP), LMU Munich</p>
     </section>
 
-    <hr class="divider">
+    <section class="feature">
+      <p class="feature-label">Current presentation</p>
+      <a class="feature-link" href="/sms26.pdf">SMS26 Handout</a>
+      <span class="pdf-note">PDF</span>
+    </section>
 
     <p class="contact">
       Email:
-      <a href="mailto:chen.zhibin@campus.lmu.de">
-        chen.zhibin@campus.lmu.de
-      </a>
+      <a href="mailto:chen.zhibin@campus.lmu.de">chen.zhibin@campus.lmu.de</a>
     </p>
   </main>
 </body>
