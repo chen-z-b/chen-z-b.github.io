@@ -8,11 +8,10 @@
 
   <style>
     :root {
-      --text: #161616;
-      --muted: #555;
-      --light: #8a8a8a;
-      --rule: #cfcac2;
-      --rule-dark: #3a3a3a;
+      --text: #171717;
+      --muted: #555555;
+      --light: #777777;
+      --rule: #d8d3ca;
       --background: #ffffff;
     }
 
@@ -42,7 +41,7 @@
     }
 
     .affiliation {
-      margin: 0 0 54px;
+      margin: 0 0 52px;
       color: var(--muted);
       font-size: 17px;
       line-height: 1.48;
@@ -52,46 +51,39 @@
       margin: 0;
     }
 
-    .document {
-      display: grid;
-      grid-template-columns: 120px 1fr;
-      column-gap: 28px;
-      align-items: baseline;
+    .feature {
       margin: 0 0 42px;
-      padding: 22px 0 21px;
-      border-top: 1px solid var(--rule-dark);
-      border-bottom: 1px solid var(--rule);
+      padding: 24px 0 0;
+      border-top: 1px solid var(--rule);
     }
 
-    .document-label {
-      margin: 0;
+    .feature-label {
+      margin: 0 0 7px;
       color: var(--light);
-      font-size: 13px;
-      line-height: 1.4;
-      letter-spacing: 0.075em;
-      text-transform: uppercase;
+      font-size: 15px;
+      font-style: italic;
     }
 
-    .document-main {
+    .feature-main {
       margin: 0;
     }
 
-    .document-link {
+    .feature-link {
       color: var(--text);
-      font-size: 21px;
+      font-size: 22px;
       line-height: 1.35;
       text-decoration: none;
-      border-bottom: 1px solid #8b8b8b;
+      border-bottom: 1px solid #8f8f8f;
     }
 
-    .document-link:hover {
+    .feature-link:hover {
       border-bottom-color: var(--text);
     }
 
-    .document-note {
-      margin-left: 9px;
+    .pdf-note {
+      margin-left: 8px;
       color: var(--light);
-      font-size: 14px;
+      font-size: 15px;
     }
 
     .contact {
@@ -125,17 +117,11 @@
         margin-bottom: 44px;
       }
 
-      .document {
-        display: block;
-        padding: 20px 0 19px;
+      .feature {
         margin-bottom: 36px;
       }
 
-      .document-label {
-        margin-bottom: 8px;
-      }
-
-      .document-link {
+      .feature-link {
         font-size: 20px;
       }
 
@@ -151,14 +137,15 @@
     <h1>Chen Zhibin</h1>
 
     <section class="affiliation">
-      <p>Munich Center for Mathematical Philosophy (MCMP), LMU</p>
+      <p>Munich Center for Mathematical Philosophy (MCMP)</p>
+      <p>LMU Munich</p>
     </section>
 
-    <section class="document" aria-label="Current presentation handout">
-      <p class="document-label">Current<br>presentation</p>
-      <p class="document-main">
-        <a class="document-link" href="/sms26.pdf">SMS26 Handout</a>
-        <span class="document-note">PDF</span>
+    <section class="feature">
+      <p class="feature-label">Current presentation</p>
+      <p class="feature-main">
+        <a class="feature-link" href="/sms26.pdf">SMS26 Handout</a>
+        <span class="pdf-note">PDF</span>
       </p>
     </section>
 
