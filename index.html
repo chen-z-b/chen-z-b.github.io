@@ -1,29 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Zhibin Chen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chen Zhibin</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #1a1a1a;
+      font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 88px auto;
+      padding: 0 28px;
+    }
+
+    h1 {
+      margin: 0 0 28px 0;
+      font-size: 38px;
+      font-weight: normal;
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+    }
+
+    .affiliation {
+      margin-bottom: 34px;
+    }
+
+    .affiliation p {
+      margin: 0;
+    }
+
+    .divider {
+      width: 52px;
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      margin: 36px 0 30px 0;
+    }
+
+    .contact {
+      margin-top: 0;
+    }
+
+    a {
+      color: #1a1a1a;
+      text-decoration: none;
+      border-bottom: 1px solid #999;
+    }
+
+    a:hover {
+      border-bottom-color: #1a1a1a;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 56px auto;
+        padding: 0 24px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      body {
+        font-size: 17px;
+      }
+    }
+  </style>
 </head>
 
-<body style="max-width: 700px; margin: 60px auto; font-family: serif; line-height: 1.6; padding: 0 20px;">
+<body>
+  <main>
+    <h1>Chen Zhibin</h1>
 
-<h1>Zhibin Chen</h1>
+    <section class="affiliation">
+      <p>MA Student</p>
+      <p>Munich Center for Mathematical Philosophy (MCMP)</p>
+      <p>LMU Munich</p>
+    </section>
 
-<p>
-MA Student<br>
-Munich Center for Mathematical Philosophy (MCMP)<br>
-LMU Munich
-</p>
+    <hr class="divider">
 
-<p>
-My research interests include philosophy of science,
-formal epistemology, mathematical explanation,
-modality, and counterfactual reasoning.
-</p>
-
-<p>
-Email: your-email
-</p>
-
+    <p class="contact">
+      Email:
+      <a href="mailto:chen.zhibin@campus.lmu.de">
+        chen.zhibin@campus.lmu.de
+      </a>
+    </p>
+  </main>
 </body>
 </html>
