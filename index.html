@@ -7,101 +7,140 @@
   <title>Chen Zhibin</title>
 
   <style>
+    :root {
+      --text: #161616;
+      --muted: #555;
+      --light: #8a8a8a;
+      --rule: #cfcac2;
+      --rule-dark: #3a3a3a;
+      --background: #ffffff;
+    }
+
     body {
       margin: 0;
-      background: #ffffff;
-      color: #171717;
-      font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      background: var(--background);
+      color: var(--text);
+      font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
       font-size: 18px;
-      line-height: 1.65;
+      line-height: 1.58;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
 
     main {
-      max-width: 660px;
-      margin: 92px auto;
-      padding: 0 32px;
+      max-width: 620px;
+      margin: 104px auto 80px;
+      padding: 0 34px;
     }
 
     h1 {
-      margin: 0 0 24px 0;
-      font-size: 42px;
+      margin: 0 0 18px;
+      font-size: 43px;
       font-weight: normal;
-      line-height: 1.15;
-      letter-spacing: 0.01em;
+      line-height: 1.08;
+      letter-spacing: 0.005em;
     }
 
     .affiliation {
-      margin: 0 0 46px 0;
-      color: #2b2b2b;
+      margin: 0 0 54px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.48;
     }
 
-    .institution {
+    .affiliation p {
       margin: 0;
     }
 
-    .feature {
-      margin: 0 0 42px 0;
-      padding: 22px 0 20px 0;
-      border-top: 1px solid #222;
-      border-bottom: 1px solid #d6d6d6;
+    .document {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      column-gap: 28px;
+      align-items: baseline;
+      margin: 0 0 42px;
+      padding: 22px 0 21px;
+      border-top: 1px solid var(--rule-dark);
+      border-bottom: 1px solid var(--rule);
     }
 
-    .feature-label {
-      margin: 0 0 8px 0;
-      font-size: 14px;
-      letter-spacing: 0.055em;
+    .document-label {
+      margin: 0;
+      color: var(--light);
+      font-size: 13px;
+      line-height: 1.4;
+      letter-spacing: 0.075em;
       text-transform: uppercase;
-      color: #666;
     }
 
-    .feature-link {
-      font-size: 22px;
-      color: #171717;
+    .document-main {
+      margin: 0;
+    }
+
+    .document-link {
+      color: var(--text);
+      font-size: 21px;
+      line-height: 1.35;
       text-decoration: none;
-      border-bottom: 1px solid #777;
+      border-bottom: 1px solid #8b8b8b;
     }
 
-    .feature-link:hover {
-      border-bottom-color: #171717;
+    .document-link:hover {
+      border-bottom-color: var(--text);
     }
 
-    .pdf-note {
-      margin-left: 10px;
-      font-size: 15px;
-      color: #777;
+    .document-note {
+      margin-left: 9px;
+      color: var(--light);
+      font-size: 14px;
     }
 
     .contact {
       margin: 0;
-      color: #2b2b2b;
+      color: var(--muted);
+      font-size: 17px;
     }
 
     a {
-      color: #171717;
+      color: var(--text);
       text-decoration: none;
-      border-bottom: 1px solid #999;
+      border-bottom: 1px solid #9b9b9b;
     }
 
     a:hover {
-      border-bottom-color: #171717;
+      border-bottom-color: var(--text);
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 640px) {
       main {
-        margin: 58px auto;
-        padding: 0 24px;
+        margin: 64px auto 56px;
+        padding: 0 26px;
       }
 
       h1 {
-        font-size: 35px;
+        font-size: 36px;
       }
 
-      body {
-        font-size: 17px;
+      .affiliation {
+        font-size: 16.5px;
+        margin-bottom: 44px;
       }
 
-      .feature-link {
+      .document {
+        display: block;
+        padding: 20px 0 19px;
+        margin-bottom: 36px;
+      }
+
+      .document-label {
+        margin-bottom: 8px;
+      }
+
+      .document-link {
         font-size: 20px;
+      }
+
+      .contact {
+        font-size: 16.5px;
       }
     }
   </style>
@@ -112,13 +151,15 @@
     <h1>Chen Zhibin</h1>
 
     <section class="affiliation">
-      <p class="institution">Munich Center for Mathematical Philosophy (MCMP), LMU Munich</p>
+      <p>Munich Center for Mathematical Philosophy (MCMP), LMU</p>
     </section>
 
-    <section class="feature">
-      <p class="feature-label">Current presentation</p>
-      <a class="feature-link" href="/sms.pdf">SMS26 Handout</a>
-      <span class="pdf-note">PDF</span>
+    <section class="document" aria-label="Current presentation handout">
+      <p class="document-label">Current<br>presentation</p>
+      <p class="document-main">
+        <a class="document-link" href="/sms26.pdf">SMS26 Handout</a>
+        <span class="document-note">PDF</span>
+      </p>
     </section>
 
     <p class="contact">
